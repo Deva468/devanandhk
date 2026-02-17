@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Wrench, Sparkles } from "lucide-react";
+import { Code, Wrench, Sparkles, BookOpen } from "lucide-react";
 
 const skillCategories = [
   {
@@ -17,6 +17,11 @@ const skillCategories = [
     title: "Other",
     icon: Sparkles,
     skills: ["Data Analysis", "UI/UX Design", "Web Development"],
+  },
+  {
+    title: "Learning",
+    icon: BookOpen,
+    skills: ["Japanese N5 Exam", "Front-End Development"],
   },
 ];
 
@@ -35,7 +40,7 @@ const SkillsSection = () => {
           </h2>
           <div className="w-16 h-1 bg-primary rounded mb-10" />
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skillCategories.map((cat, i) => (
               <motion.div
                 key={cat.title}
