@@ -47,7 +47,7 @@ const ResumeSection = () => {
                       <GraduationCap className="w-4 h-4" /> Education
                     </h3>
                     <p className="text-foreground">B.E. CSE (Cyber Security)</p>
-                    <p className="text-muted-foreground text-sm">Dhanalakshmi College of Engineering • 2023–2027 • CGPA: 8.31</p>
+                    <p className="text-muted-foreground text-sm">Dhanalakshmi College of Engineering • 2023–2027 • CGPA: <span className="text-primary font-bold">8.31</span></p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-primary flex items-center gap-2 mb-2">
@@ -78,6 +78,13 @@ const ResumeSection = () => {
                       <li>• Cybersecurity Job Simulation — Mastercard (Forage)</li>
                       <li>• Introduction to Cybersecurity — Cisco</li>
                       <li>• Google UX Design — Coursera</li>
+                      <li>• Python for Beginners — Cisco</li>
+                      <li>• Web Development Fundamentals — Udemy</li>
+                      <li>• Data Analysis with Python — Coursera</li>
+                      <li>• JavaScript Essentials — HackerRank</li>
+                      <li>• UI/UX Design Specialization — Coursera</li>
+                      <li>• Ethical Hacking Basics — Udemy</li>
+                      <li>• SQL for Data Science — Coursera</li>
                     </ul>
                   </div>
                 </div>
@@ -89,7 +96,7 @@ const ResumeSection = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { icon: GraduationCap, title: "Education", desc: "B.E. CSE (Cyber Security)" },
-              { icon: Briefcase, title: "Experience", desc: "2 Internships" },
+              { icon: Briefcase, title: "Experience", desc: "5 Internships" },
               { icon: Code, title: "Skills", desc: "9+ Technologies" },
               { icon: Award, title: "Certifications", desc: "10+ Certificates" },
             ].map((item) => (

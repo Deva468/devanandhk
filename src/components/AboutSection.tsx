@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Award, Languages } from "lucide-react";
 
 const stats = [
-  { icon: Briefcase, label: "Internships", value: "2" },
+  { icon: Briefcase, label: "Internships", value: "5" },
   { icon: Award, label: "Certificates", value: "10+" },
   { icon: GraduationCap, label: "Year", value: "2023–27" },
   { icon: Languages, label: "Languages", value: "2" },
@@ -42,7 +42,7 @@ const AboutSection = () => {
                   📍 Kanchipuram
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  🗣️ English, Tamil
+                  🗣️ English, Tamil, Japanese (Learning)
                 </span>
               </div>
             </div>
@@ -56,7 +56,7 @@ const AboutSection = () => {
                   </div>
                   <p className="text-foreground font-medium">B.E. CSE (Cyber Security)</p>
                   <p className="text-muted-foreground text-sm">Dhanalakshmi College of Engineering</p>
-                  <p className="text-muted-foreground text-sm">2023 – 2027 • CGPA: 8.31</p>
+                  <p className="text-muted-foreground text-sm">2023 – 2027 • CGPA: <span className="text-primary font-bold text-base">8.31</span></p>
                 </CardContent>
               </Card>
 
