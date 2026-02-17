@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import I2Logo from "./I2Logo";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -31,9 +32,12 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="text-2xl font-bold font-['Space_Grotesk'] text-primary">
-          DK<span className="text-foreground">.</span>
-        </a>
+        <div className="flex items-center gap-4">
+          <I2Logo />
+          <a href="#home" className="text-2xl font-bold font-['Space_Grotesk'] text-primary">
+            DK<span className="text-foreground">.</span>
+          </a>
+        </div>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">

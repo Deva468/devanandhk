@@ -1,11 +1,13 @@
 import { Mail, Phone, Github, Linkedin } from "lucide-react";
+import I2Logo from "./I2Logo";
 
 const Footer = () => {
   return (
     <footer className="border-t border-border py-10">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
+          <div className="flex items-center gap-4">
+            <I2Logo />
             <a href="#home" className="text-2xl font-bold font-['Space_Grotesk'] text-primary">
               DK<span className="text-foreground">.</span>
             </a>
