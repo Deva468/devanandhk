@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -17,6 +17,12 @@ const Footer = () => {
             </a>
             <a href="tel:+919787478553" className="hover:text-primary transition-colors flex items-center gap-1">
               <Phone className="w-4 h-4" /> Phone
+            </a>
+            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Linkedin className="w-4 h-4" />
+            </a>
+            <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Github className="w-4 h-4" />
             </a>
           </div>
 

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowDown, Download, Shield, Palette } from "lucide-react";
+import { ArrowDown, Download, Shield, Palette, Github, Linkedin } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -43,6 +43,15 @@ const HeroSection = () => {
                 <Download className="mr-2 w-4 h-4" /> Download Resume
               </a>
             </Button>
+          </div>
+
+          <div className="flex items-center gap-4 mt-6">
+            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Github className="w-5 h-5" />
+            </a>
           </div>
         </motion.div>
 

@@ -47,7 +47,7 @@ const ResumeSection = () => {
                       <GraduationCap className="w-4 h-4" /> Education
                     </h3>
                     <p className="text-foreground">B.E. CSE (Cyber Security)</p>
-                    <p className="text-muted-foreground text-sm">Dhanalakshmi College of Engineering • 2023–2027 • CGPA: 8.1</p>
+                    <p className="text-muted-foreground text-sm">Dhanalakshmi College of Engineering • 2023–2027 • CGPA: 8.31</p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-primary flex items-center gap-2 mb-2">
@@ -91,7 +91,7 @@ const ResumeSection = () => {
               { icon: GraduationCap, title: "Education", desc: "B.E. CSE (Cyber Security)" },
               { icon: Briefcase, title: "Experience", desc: "2 Internships" },
               { icon: Code, title: "Skills", desc: "9+ Technologies" },
-              { icon: Award, title: "Certifications", desc: "3+ Certificates" },
+              { icon: Award, title: "Certifications", desc: "10+ Certificates" },
             ].map((item) => (
               <Card key={item.title} className="bg-card border-border hover:border-primary/30 transition-colors">
                 <CardContent className="p-5 text-center">
