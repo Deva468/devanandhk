@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 210 40% 96%;
-    --foreground: 220 20% 15%;
+    --background: 220 30% 94%;
+    --foreground: 222 47% 20%;
 
-    --card: 210 40% 98%;
-    --card-foreground: 220 20% 15%;
+    --card: 220 30% 97%;
+    --card-foreground: 222 47% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover: 220 30% 97%;
+    --popover-foreground: 222 47% 20%;
 
-    --primary: 211 100% 50%;
+    --primary: 214 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 30% 92%;
-    --secondary-foreground: 220 20% 15%;
+    --secondary: 220 25% 90%;
+    --secondary-foreground: 222 47% 20%;
 
-    --muted: 210 25% 93%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 220 20% 91%;
+    --muted-foreground: 220 15% 50%;
 
-    --accent: 211 100% 50%;
+    --accent: 214 100% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 20% 88%;
-    --input: 210 20% 88%;
-    --ring: 211 100% 50%;
+    --border: 220 20% 86%;
+    --input: 220 20% 86%;
+    --ring: 214 100% 50%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 220 20% 15%;
-    --sidebar-primary: 211 100% 50%;
+    --sidebar-background: 220 30% 97%;
+    --sidebar-foreground: 222 47% 20%;
+    --sidebar-primary: 214 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 30% 92%;
-    --sidebar-accent-foreground: 220 20% 15%;
-    --sidebar-border: 210 20% 88%;
-    --sidebar-ring: 211 100% 50%;
+    --sidebar-accent: 220 25% 90%;
+    --sidebar-accent-foreground: 222 47% 20%;
+    --sidebar-border: 220 20% 86%;
+    --sidebar-ring: 214 100% 50%;
   }
 }
 
@@ -71,12 +71,12 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(210 40% 96%);
+  background: hsl(220 30% 94%);
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(211 100% 50% / 0.3);
+  background: hsl(214 100% 50% / 0.3);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(211 100% 50% / 0.5);
+  background: hsl(214 100% 50% / 0.5);
 }
