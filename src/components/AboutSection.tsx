@@ -48,7 +48,7 @@ const AboutSection = () => {
             </div>
 
             <div>
-              <Card className="bg-card border-border mb-6">
+              <Card className="bg-card border-border hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 mb-6">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <GraduationCap className="w-5 h-5 text-primary" />
@@ -62,7 +62,7 @@ const AboutSection = () => {
 
               <div className="grid grid-cols-2 gap-4">
                 {stats.map((stat) => (
-                  <Card key={stat.label} className="bg-card border-border">
+                  <Card key={stat.label} className="bg-card border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
                     <CardContent className="p-4 text-center">
                       <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" />
                       <p className="text-2xl font-bold text-foreground">{stat.value}</p>

@@ -49,7 +49,7 @@ const SkillsSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.15 }}
               >
-                <Card className="bg-card border-border hover:border-primary/40 transition-colors h-full">
+                <Card className="bg-card border-border hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 h-full">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-5">
                       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -61,7 +61,7 @@ const SkillsSection = () => {
                       {cat.skills.map((skill) => (
                         <span
                           key={skill}
-                          className="px-3 py-1.5 text-sm rounded-full bg-secondary text-foreground border border-border"
+                          className="px-3 py-1.5 text-sm rounded-full bg-background text-foreground border border-border hover:border-primary/40 hover:text-primary transition-colors cursor-default"
                         >
                           {skill}
                         </span>
