@@ -23,6 +23,31 @@ const experiences = [
       "Worked closely with the development team to ensure design feasibility",
     ],
   },
+  {
+    role: "Front-End Developer Intern",
+    company: "SkillSync",
+    period: "Jan – Feb 2026",
+    points: [
+      "Developed front-end components using HTML, CSS, and JavaScript",
+      "Worked on real-time projects to improve user interface and responsiveness",
+      "Learned modern front-end development practices and debugging techniques",
+      "Collaborated with mentors and team members in project development",
+      "Strengthened practical skills in web development and responsive design",
+    ],
+  },
+  {
+    role: "Full Stack Developer Intern",
+    company: "NoviTech R&D Pvt Ltd",
+    period: "Feb – Mar 2026",
+    points: [
+      "Gained hands-on experience in full stack web development concepts",
+      "Learned how real-world web applications are designed, developed, and deployed",
+      "Worked on both front-end and back-end development basics",
+      "Improved practical skills in HTML, CSS, JavaScript, and backend integration",
+      "Understood client-server architecture and application workflow",
+      "Collaborated with mentors and learned industry-level development practices",
+    ],
+  },
 ];
 
 const ExperienceSection = () => {

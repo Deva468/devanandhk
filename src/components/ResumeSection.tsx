@@ -70,23 +70,6 @@ const ResumeSection = () => {
                     </h3>
                     <p className="text-muted-foreground text-sm">HTML, CSS, JavaScript, C, Python, Figma, MySQL, Data Analysis, UI/UX Design</p>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-primary flex items-center gap-2 mb-2">
-                      <Award className="w-4 h-4" /> Certifications
-                    </h3>
-                    <ul className="text-muted-foreground text-sm space-y-1">
-                      <li>• Cybersecurity Job Simulation — Mastercard (Forage)</li>
-                      <li>• Introduction to Cybersecurity — Cisco</li>
-                      <li>• Google UX Design — Coursera</li>
-                      <li>• Python for Beginners — Cisco</li>
-                      <li>• Web Development Fundamentals — Udemy</li>
-                      <li>• Data Analysis with Python — Coursera</li>
-                      <li>• JavaScript Essentials — HackerRank</li>
-                      <li>• UI/UX Design Specialization — Coursera</li>
-                      <li>• Ethical Hacking Basics — Udemy</li>
-                      <li>• SQL for Data Science — Coursera</li>
-                    </ul>
-                  </div>
                 </div>
               </DialogContent>
             </Dialog>
