@@ -74,7 +74,7 @@ const ExperienceSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.2 }}
               >
-                <Card className="bg-card border-border hover:border-primary/30 transition-colors">
+                <Card className="bg-card border-border hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 mt-1">

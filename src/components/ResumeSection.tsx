@@ -83,7 +83,7 @@ const ResumeSection = () => {
               { icon: Code, title: "Skills", desc: "9+ Technologies" },
               { icon: Award, title: "Certifications", desc: "10+ Certificates" },
             ].map((item) => (
-              <Card key={item.title} className="bg-card border-border hover:border-primary/30 transition-colors">
+              <Card key={item.title} className="bg-card border-border hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
                 <CardContent className="p-5 text-center">
                   <item.icon className="w-8 h-8 text-primary mx-auto mb-3" />
                   <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>

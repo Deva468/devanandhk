@@ -35,7 +35,7 @@ const ContactSection = () => {
               </p>
               <div className="space-y-4">
                 {contactInfo.map((item) => (
-                  <Card key={item.label} className="bg-card border-border">
+                  <Card key={item.label} className="bg-card border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-0.5 transition-all duration-300">
                     <CardContent className="p-4 flex items-center gap-4">
                       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                         <item.icon className="w-5 h-5 text-primary" />
@@ -57,7 +57,7 @@ const ContactSection = () => {
             </div>
 
             {/* Form */}
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-border hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
               <CardContent className="p-6">
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-2 gap-4">

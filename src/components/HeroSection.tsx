@@ -62,7 +62,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex justify-center relative"
         >
-          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 flex items-center justify-center relative">
+          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/20 flex items-center justify-center relative shadow-2xl shadow-primary/10">
             <span className="text-6xl md:text-8xl font-bold text-primary font-['Space_Grotesk']">
               DK
             </span>
