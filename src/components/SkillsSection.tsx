@@ -4,14 +4,14 @@ import { Code, Wrench, Sparkles, BookOpen } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Languages",
+    title: "Technical Skills",
     icon: Code,
-    skills: ["HTML", "CSS", "JavaScript", "C", "Python"],
+    skills: ["HTML", "CSS", "JavaScript", "C", "Python", "GitHub"],
   },
   {
     title: "Tools",
     icon: Wrench,
-    skills: ["Figma", "MySQL"],
+    skills: ["Figma", "MySQL", "VS Code"],
   },
   {
     title: "Other",
@@ -21,7 +21,7 @@ const skillCategories = [
   {
     title: "Learning",
     icon: BookOpen,
-    skills: ["Japanese N5 Exam", "Front-End Development"],
+    skills: ["Japanese N5 Exam", "Front-End Development", "Bootstrap", "MERN Stack", "Node.js"],
   },
 ];
 

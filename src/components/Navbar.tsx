@@ -34,9 +34,6 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <I2Logo />
-          <a href="#home" className="text-2xl font-bold font-['Space_Grotesk'] text-primary">
-            DK<span className="text-foreground">.</span>
-          </a>
         </div>
 
         {/* Desktop */}
