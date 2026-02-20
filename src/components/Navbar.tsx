@@ -42,13 +42,22 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors underline-grow"
             >
               {link.label}
             </a>
           ))}
-          <Button size="sm" asChild>
-            <a href="#contact">Get In Touch</a>
+          <Button size="sm" asChild className="group">
+            <a href="#contact">
+              Get In Touch
+              <motion.span
+                className="inline-block ml-1"
+                animate={{ x: [0, 3, 0] }}
+                transition={{ repeat: Infinity, duration: 1.5 }}
+              >
+                →
+              </motion.span>
+            </a>
           </Button>
         </div>
 
@@ -68,15 +77,18 @@ const Navbar = () => {
             className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border"
           >
             <div className="px-6 py-4 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
+              {navLinks.map((link, i) => (
+                <motion.a
                   key={link.href}
                   href={link.href}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.05 }}
                   className="text-muted-foreground hover:text-primary transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
-                </a>
+                </motion.a>
               ))}
               <Button size="sm" asChild>
                 <a href="#contact" onClick={() => setMobileOpen(false)}>Get In Touch</a>
