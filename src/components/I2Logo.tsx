@@ -1,10 +1,8 @@
+import i2LogoImg from "@/assets/i2-logo.png";
+
 const I2Logo = ({ className = "" }: { className?: string }) => {
   return (
-    <span
-      className={`text-2xl font-bold font-['Space_Grotesk'] text-primary select-none ${className}`}
-    >
-      D
-    </span>
+    <img src={i2LogoImg} alt="i2 Tech Solutions" className={`h-8 w-auto ${className}`} />
   );
 };
 
