@@ -212,5 +212,5 @@ html {
   animation: marquee-left 30s linear infinite;
 }
 .animate-marquee-fast {
-  animation: marquee-left 8s linear infinite;
+  animation: marquee-left 20s linear infinite;
 }
