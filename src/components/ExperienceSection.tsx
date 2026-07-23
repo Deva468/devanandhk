@@ -36,16 +36,16 @@ const experiences = [
     ],
   },
   {
-    role: "Full Stack Developer Intern",
+    role: "Frontend Developer Intern",
     company: "NoviTech R&D Pvt Ltd",
     period: "Feb – Mar 2026",
     points: [
-      "Gained hands-on experience in full stack web development concepts",
-      "Learned how real-world web applications are designed, developed, and deployed",
-      "Worked on both front-end and back-end development basics",
-      "Improved practical skills in HTML, CSS, JavaScript, and backend integration",
-      "Understood client-server architecture and application workflow",
-      "Collaborated with mentors and learned industry-level development practices",
+      "Developed an e-commerce web application using React.js with backend basics",
+      "Built responsive, component-based UIs with React.js, HTML, CSS, and JavaScript",
+      "Implemented reusable components and state management for smooth user flow",
+      "Integrated frontend with backend APIs to handle products, cart, and orders",
+      "Improved practical skills in modern frontend development and debugging",
+      "Collaborated with mentors and followed industry-level development practices",
     ],
   },
 ];

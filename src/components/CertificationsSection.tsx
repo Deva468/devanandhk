@@ -1,30 +1,24 @@
 import { motion } from "framer-motion";
-import certThozhil from "@/assets/cert-thozhil.jpg";
 import certEkhie from "@/assets/cert-ekhie.jpg";
 import certTata from "@/assets/cert-tata.jpg";
 import certOracle from "@/assets/cert-oracle.jpg";
-import certThozhilUiux from "@/assets/cert-thozhil-uiux.jpg";
 import certIda from "@/assets/cert-ida.jpg";
 import certSupraja from "@/assets/cert-supraja.jpg";
 import certNovitech from "@/assets/cert-novitech-masterclass.jpg";
 import certCydenium from "@/assets/cert-cydenium.jpg";
 import certZenith from "@/assets/cert-zenith.jpg";
 import certSkillsync from "@/assets/cert-skillsync.jpg";
-import certSuprajaL1 from "@/assets/cert-supraja-l1.jpg";
 
 const certificates = [
-  { src: certThozhil, alt: "Thozhil - Web Developer Intern Certificate" },
   { src: certEkhie, alt: "Ekhie Business Solutions - Web Developer Internship" },
   { src: certTata, alt: "Tata Strive & Microsoft - Cybersecurity Certificate" },
   { src: certOracle, alt: "Oracle Certified Foundations Associate" },
-  { src: certThozhilUiux, alt: "Thozhil - UI/UX Designer Intern Certificate" },
   { src: certIda, alt: "Industrial Design & Animations - UI/UX Internship" },
   { src: certSupraja, alt: "Supraja Technologies - Cyber Security & Ethical Hacking" },
   { src: certNovitech, alt: "NoviTech - Full Stack Development MasterClass" },
   { src: certCydenium, alt: "Cydenium - Ethical Hacking Masterclass" },
   { src: certZenith, alt: "Jeppiaar Engineering College - Zenith'26 Participation" },
   { src: certSkillsync, alt: "SkillSync - Front-End Developer Internship" },
-  { src: certSuprajaL1, alt: "Supraja Technologies - Cyber Security Best Student" },
 ];
 
 const CertificationsSection = () => {
