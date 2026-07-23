@@ -3,10 +3,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Award, Languages } from "lucide-react";
 
 const stats = [
-  { icon: Briefcase, label: "Internships", value: "5" },
+  { icon: Briefcase, label: "Internships", value: "4" },
   { icon: Award, label: "Certificates", value: "10+" },
   { icon: GraduationCap, label: "Year", value: "2023–27" },
-  { icon: Languages, label: "Languages", value: "2" },
+  { icon: Languages, label: "Languages", value: "3" },
 ];
 
 const AboutSection = () => {
