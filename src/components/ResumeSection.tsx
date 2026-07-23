@@ -27,7 +27,7 @@ const ResumeSection = () => {
 
           <div className="flex flex-wrap gap-4 mb-10">
             <Button asChild size="lg">
-              <a href="/resume.pdf" download>
+              <a href="/Devanandh_K_Resume_CS.docx" download>
                 <Download className="w-4 h-4 mr-2" /> Download Resume
               </a>
             </Button>
@@ -47,7 +47,7 @@ const ResumeSection = () => {
                       <GraduationCap className="w-4 h-4" /> Education
                     </h3>
                     <p className="text-foreground">B.E. CSE (Cyber Security)</p>
-                    <p className="text-muted-foreground text-sm">Dhanalakshmi College of Engineering • 2023–2027 • CGPA: <span className="text-primary font-bold">8.31</span></p>
+                    <p className="text-muted-foreground text-sm">Dhanalakshmi College of Engineering • 2023–2027 • CGPA: <span className="text-primary font-bold">8.14</span> (till 5th Semester)</p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-primary flex items-center gap-2 mb-2">
@@ -68,7 +68,7 @@ const ResumeSection = () => {
                     <h3 className="font-semibold text-primary flex items-center gap-2 mb-2">
                       <Code className="w-4 h-4" /> Skills
                     </h3>
-                    <p className="text-muted-foreground text-sm">HTML, CSS, JavaScript, C, Python, Figma, MySQL, Data Analysis, UI/UX Design</p>
+                    <p className="text-muted-foreground text-sm">HTML, CSS, JavaScript, React.js, Node.js (Basics), Java, Kali Linux, Wireshark, Burp Suite, Nmap, GitHub, VS Code, Figma, Vercel</p>
                   </div>
                 </div>
               </DialogContent>

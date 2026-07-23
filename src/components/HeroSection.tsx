@@ -40,8 +40,8 @@ const HeroSection = () => {
             transition={{ delay: 0.5 }}
             className="text-muted-foreground text-lg mb-8 max-w-lg"
           >
-            B.E. CSE (Cyber Security) student at Dhanalakshmi College of Engineering, 
-            passionate about web development, UI/UX design, and cybersecurity.
+            B.E. CSE (Cyber Security) student at Dhanalakshmi College of Engineering
+            with interests in Cyber Security, MERN Stack Development, and UI/UX Design.
           </motion.p>
 
           <motion.div
@@ -56,7 +56,7 @@ const HeroSection = () => {
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild className="group">
-              <a href="/resume.pdf" download>
+              <a href="/Devanandh_K_Resume_CS.docx" download>
                 <Download className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" /> Download Resume
               </a>
             </Button>

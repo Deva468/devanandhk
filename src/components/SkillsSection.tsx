@@ -5,24 +5,29 @@ import { useState } from "react";
 
 const skillCategories = [
   {
-    title: "Technical Skills",
+    title: "Security Tools",
+    icon: Sparkles,
+    skills: ["Kali Linux", "Wireshark", "Burp Suite", "Nmap"],
+  },
+  {
+    title: "Programming Language",
     icon: Code,
-    skills: ["HTML", "CSS", "JavaScript", "C", "Python", "GitHub"],
+    skills: ["Java"],
+  },
+  {
+    title: "Web Development",
+    icon: Code,
+    skills: ["HTML", "CSS", "JavaScript", "React.js", "Node.js (Basics)"],
   },
   {
     title: "Tools",
     icon: Wrench,
-    skills: ["Figma", "MySQL", "VS Code"],
-  },
-  {
-    title: "Other",
-    icon: Sparkles,
-    skills: ["Data Analysis", "UI/UX Design", "Web Development"],
+    skills: ["GitHub", "VS Code", "Figma", "Vercel"],
   },
   {
     title: "Learning",
     icon: BookOpen,
-    skills: ["Japanese N5 Exam", "Front-End Development", "Bootstrap", "MERN Stack", "Node.js"],
+    skills: ["Japanese N4", "CEH (Certified Ethical Hacker)", "Basic Linux Commands"],
   },
 ];
 

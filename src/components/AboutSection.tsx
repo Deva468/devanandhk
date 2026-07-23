@@ -34,17 +34,22 @@ const AboutSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p className="text-muted-foreground leading-relaxed mb-6">
-                I am Devanandh K, a dedicated CSE (Cyber Security) student at Dhanalakshmi College 
-                of Engineering with a strong foundation in web development and UI/UX design. I am 
-                passionate about creating intuitive digital experiences and securing them.
+                Aspiring Cyber Security professional pursuing a B.E. in Computer Science and
+                Engineering (Cyber Security) at Dhanalakshmi College of Engineering. I have
+                knowledge of Network Security, Web Security, Vulnerability Assessment, and
+                Ethical Hacking fundamentals, with experience using tools such as Kali Linux,
+                Wireshark, Burp Suite, Nmap, and Postman.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With hands-on experience through internships in web development and UI/UX designing, 
-                I bring a blend of creativity and technical skills. I'm proficient in HTML, CSS, 
-                JavaScript, Python, C, and tools like Figma and MySQL.
+                I have also completed multiple Web Development internships, where I gained
+                practical experience in HTML, CSS, JavaScript, React.js, and Node.js (Basics).
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                I am currently pursuing the Certified Ethical Hacker (CEH) certification and
+                learning Japanese (JLPT N5 – Result Awaited, N4 in Progress).
               </p>
 
-              <div className="flex gap-4 mt-4">
+              <div className="flex flex-wrap gap-4 mt-4">
                 <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-default">
                   📍 Kanchipuram
                 </span>
@@ -69,7 +74,7 @@ const AboutSection = () => {
                   </div>
                   <p className="text-foreground font-medium">B.E. CSE (Cyber Security)</p>
                   <p className="text-muted-foreground text-sm">Dhanalakshmi College of Engineering</p>
-                  <p className="text-muted-foreground text-sm">2023 – 2027 • CGPA: <span className="text-primary font-bold text-base">8.31</span></p>
+                  <p className="text-muted-foreground text-sm">2023 – 2027 • CGPA: <span className="text-primary font-bold text-base">8.14</span> <span className="text-xs">(till 5th Semester)</span></p>
                 </CardContent>
               </Card>
 
