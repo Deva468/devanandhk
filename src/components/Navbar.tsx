@@ -32,9 +32,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="text-lg font-bold text-gradient font-['Space_Grotesk']">
-          Devanandh K
-        </a>
+        <span />
+
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
