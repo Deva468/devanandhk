@@ -72,15 +72,16 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(220 30% 94%);
+  background: hsl(222 47% 11%);
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(214 100% 50% / 0.3);
+  background: hsl(189 94% 43% / 0.4);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(214 100% 50% / 0.5);
+  background: hsl(189 94% 43% / 0.6);
 }
+
 
 /* Animated gradient text */
 @keyframes gradient-shift {
