@@ -79,7 +79,7 @@ const ResumeSection = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { icon: GraduationCap, title: "Education", desc: "B.E. CSE (Cyber Security)" },
-              { icon: Briefcase, title: "Experience", desc: "5 Internships" },
+              { icon: Briefcase, title: "Experience", desc: "4 Internships" },
               { icon: Code, title: "Skills", desc: "9+ Technologies" },
               { icon: Award, title: "Certifications", desc: "10+ Certificates" },
             ].map((item) => (

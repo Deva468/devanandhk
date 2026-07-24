@@ -11,7 +11,7 @@ const Footer = () => {
             {[
               { icon: Mail, label: "Email", href: "mailto:devanandhkathirvel@gmail.com" },
               { icon: Phone, label: "Phone", href: "tel:+919787478553" },
-              { icon: Linkedin, label: null, href: "https://www.linkedin.com/in/devanandh-k-csa" },
+              { icon: Linkedin, label: null, href: "https://www.linkedin.com/in/devanandh-k-csa/" },
               { icon: Github, label: null, href: "https://github.com/dashboard" },
             ].map((item, i) => (
               <motion.a

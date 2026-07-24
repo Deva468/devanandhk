@@ -40,12 +40,11 @@ const experiences = [
     company: "NoviTech R&D Pvt Ltd",
     period: "Feb – Mar 2026",
     points: [
-      "Developed an e-commerce web application using React.js with backend basics",
-      "Built responsive, component-based UIs with React.js, HTML, CSS, and JavaScript",
-      "Implemented reusable components and state management for smooth user flow",
-      "Integrated frontend with backend APIs to handle products, cart, and orders",
-      "Improved practical skills in modern frontend development and debugging",
-      "Collaborated with mentors and followed industry-level development practices",
+      "Built the frontend of an e-commerce web application using React.js",
+      "Designed responsive, component-based UIs with React.js, HTML, CSS, and JavaScript",
+      "Created reusable components and managed UI state for a smooth user flow",
+      "Focused on clean layouts, mobile responsiveness, and accessible design",
+      "Strengthened practical skills in modern frontend development and debugging",
     ],
   },
 ];
