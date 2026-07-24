@@ -164,8 +164,9 @@ html {
 
 /* Animated border */
 @keyframes border-dance {
-  0%, 100% { border-color: hsl(214 100% 50% / 0.2); }
-  50% { border-color: hsl(214 100% 50% / 0.5); }
+  0%, 100% { border-color: hsl(189 94% 43% / 0.2); }
+  50% { border-color: hsl(189 94% 43% / 0.5); }
+
 }
 
 /* Staggered children animation */
