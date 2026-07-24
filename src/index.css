@@ -141,7 +141,7 @@ html {
 }
 .card-interactive:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 20px 40px -15px hsl(214 100% 50% / 0.15);
+  box-shadow: 0 20px 40px -15px hsl(189 94% 43% / 0.2);
 }
 
 /* Underline grow effect */
