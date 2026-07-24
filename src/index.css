@@ -6,45 +6,46 @@
 
 @layer base {
   :root {
-    --background: 220 30% 94%;
-    --foreground: 222 47% 20%;
+    --background: 222 47% 11%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 20%;
+    --card: 217 33% 17%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 20%;
+    --popover: 217 33% 17%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 214 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 189 94% 43%;
+    --primary-foreground: 222 47% 11%;
 
-    --secondary: 220 25% 93%;
-    --secondary-foreground: 222 47% 20%;
+    --secondary: 217 33% 20%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 91%;
-    --muted-foreground: 220 15% 50%;
+    --muted: 217 33% 20%;
+    --muted-foreground: 214 32% 78%;
 
-    --accent: 214 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 189 94% 43%;
+    --accent-foreground: 222 47% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 214 100% 50%;
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+    --ring: 189 94% 43%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 222 47% 20%;
-    --sidebar-primary: 214 100% 50%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 25% 93%;
-    --sidebar-accent-foreground: 222 47% 20%;
-    --sidebar-border: 220 15% 90%;
-    --sidebar-ring: 214 100% 50%;
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 189 94% 43%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 33% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 217 33% 25%;
+    --sidebar-ring: 189 94% 43%;
   }
+
 }
 
 @layer base {
@@ -71,15 +72,16 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(220 30% 94%);
+  background: hsl(222 47% 11%);
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(214 100% 50% / 0.3);
+  background: hsl(189 94% 43% / 0.4);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(214 100% 50% / 0.5);
+  background: hsl(189 94% 43% / 0.6);
 }
+
 
 /* Animated gradient text */
 @keyframes gradient-shift {
@@ -88,7 +90,7 @@ html {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, hsl(214 100% 50%), hsl(240 80% 60%), hsl(214 100% 50%));
+  background: linear-gradient(135deg, hsl(189 94% 43%), hsl(199 89% 60%), hsl(189 94% 43%));
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -112,8 +114,9 @@ html {
 
 /* Pulse glow */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(214 100% 50% / 0.1); }
-  50% { box-shadow: 0 0 40px hsl(214 100% 50% / 0.25); }
+  0%, 100% { box-shadow: 0 0 20px hsl(189 94% 43% / 0.15); }
+  50% { box-shadow: 0 0 40px hsl(189 94% 43% / 0.3); }
+
 }
 
 .animate-pulse-glow {
@@ -127,7 +130,7 @@ html {
 }
 
 .shimmer-line {
-  background: linear-gradient(90deg, hsl(214 100% 50%) 0%, hsl(240 80% 65%) 50%, hsl(214 100% 50%) 100%);
+  background: linear-gradient(90deg, hsl(189 94% 43%) 0%, hsl(199 89% 65%) 50%, hsl(189 94% 43%) 100%);
   background-size: 200% 100%;
   animation: shimmer 3s ease-in-out infinite;
 }
@@ -138,7 +141,7 @@ html {
 }
 .card-interactive:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 20px 40px -15px hsl(214 100% 50% / 0.15);
+  box-shadow: 0 20px 40px -15px hsl(189 94% 43% / 0.2);
 }
 
 /* Underline grow effect */
@@ -152,7 +155,7 @@ html {
   left: 0;
   width: 0;
   height: 2px;
-  background: hsl(214 100% 50%);
+  background: hsl(189 94% 43%);
   transition: width 0.3s ease;
 }
 .underline-grow:hover::after {
@@ -161,8 +164,9 @@ html {
 
 /* Animated border */
 @keyframes border-dance {
-  0%, 100% { border-color: hsl(214 100% 50% / 0.2); }
-  50% { border-color: hsl(214 100% 50% / 0.5); }
+  0%, 100% { border-color: hsl(189 94% 43% / 0.2); }
+  50% { border-color: hsl(189 94% 43% / 0.5); }
+
 }
 
 /* Staggered children animation */
