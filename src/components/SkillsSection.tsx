@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Wrench, Sparkles, BookOpen } from "lucide-react";
+import { Code, Wrench, Sparkles, BookOpen, Languages } from "lucide-react";
 import { useState } from "react";
 
 const skillCategories = [
@@ -27,7 +27,17 @@ const skillCategories = [
   {
     title: "Learning",
     icon: BookOpen,
-    skills: ["Japanese N4", "CEH (Certified Ethical Hacker)", "Basic Linux Commands"],
+    skills: ["CEH (Certified Ethical Hacker)", "Basic Linux Commands"],
+  },
+  {
+    title: "Japanese",
+    icon: Languages,
+    skills: [
+      "JLPT N5 – Result Awaited",
+      "JLPT N4 – Learning",
+      "Hiragana & Katakana",
+      "Basic Reading & Writing",
+    ],
   },
 ];
 
