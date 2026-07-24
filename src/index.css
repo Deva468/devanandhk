@@ -130,7 +130,7 @@ html {
 }
 
 .shimmer-line {
-  background: linear-gradient(90deg, hsl(214 100% 50%) 0%, hsl(240 80% 65%) 50%, hsl(214 100% 50%) 100%);
+  background: linear-gradient(90deg, hsl(189 94% 43%) 0%, hsl(199 89% 65%) 50%, hsl(189 94% 43%) 100%);
   background-size: 200% 100%;
   animation: shimmer 3s ease-in-out infinite;
 }
