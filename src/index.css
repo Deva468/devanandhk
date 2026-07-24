@@ -155,7 +155,7 @@ html {
   left: 0;
   width: 0;
   height: 2px;
-  background: hsl(214 100% 50%);
+  background: hsl(189 94% 43%);
   transition: width 0.3s ease;
 }
 .underline-grow:hover::after {
