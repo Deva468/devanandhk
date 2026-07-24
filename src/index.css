@@ -90,7 +90,7 @@ html {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, hsl(214 100% 50%), hsl(240 80% 60%), hsl(214 100% 50%));
+  background: linear-gradient(135deg, hsl(189 94% 43%), hsl(199 89% 60%), hsl(189 94% 43%));
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
