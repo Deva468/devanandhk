@@ -114,8 +114,9 @@ html {
 
 /* Pulse glow */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(214 100% 50% / 0.1); }
-  50% { box-shadow: 0 0 40px hsl(214 100% 50% / 0.25); }
+  0%, 100% { box-shadow: 0 0 20px hsl(189 94% 43% / 0.15); }
+  50% { box-shadow: 0 0 40px hsl(189 94% 43% / 0.3); }
+
 }
 
 .animate-pulse-glow {
