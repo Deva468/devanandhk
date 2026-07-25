@@ -68,7 +68,7 @@ const HeroSection = () => {
             transition={{ delay: 0.9 }}
             className="flex items-center gap-4 mt-6"
           >
-            <a href="https://www.linkedin.com/in/devanandh-k-csa/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:scale-125 transition-all duration-300">
+            <a href="https://www.linkedin.com/in/devanandh-k-a56708337" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:scale-125 transition-all duration-300">
               <Linkedin className="w-5 h-5" />
             </a>
             <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:scale-125 transition-all duration-300">
