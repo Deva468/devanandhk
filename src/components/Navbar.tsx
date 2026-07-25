@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -16,12 +16,27 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    const dark = stored === "dark";
+    setIsDark(dark);
+    document.documentElement.classList.toggle("dark", dark);
+  }, []);
+
+  const toggleTheme = () => {
+    const next = !isDark;
+    setIsDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
+  };
 
   return (
     <motion.nav
@@ -47,6 +62,13 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="p-2 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+          >
+            {isDark ? <Sun size={16} /> : <Moon size={16} />}
+          </button>
           <Button size="sm" asChild className="group">
             <a href="#contact">
               Get In Touch
@@ -62,9 +84,18 @@ const Navbar = () => {
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="p-2 rounded-full border border-border text-muted-foreground hover:text-primary"
+          >
+            {isDark ? <Sun size={16} /> : <Moon size={16} />}
+          </button>
+          <button className="text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}

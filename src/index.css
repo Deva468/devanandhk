@@ -6,6 +6,49 @@
 
 @layer base {
   :root {
+    /* Light (ice-blue) theme — default */
+    --background: 204 60% 96%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 94%;
+    --muted-foreground: 215 16% 40%;
+
+    --accent: 217 91% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 85%;
+    --input: 214 32% 85%;
+    --ring: 217 91% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 204 60% 96%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 217 91% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 94%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 85%;
+    --sidebar-ring: 217 91% 55%;
+  }
+
+  .dark {
+    /* Dark navy + cyan theme */
     --background: 222 47% 11%;
     --foreground: 0 0% 100%;
 
@@ -27,14 +70,12 @@
     --accent: 189 94% 43%;
     --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 62% 45%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 217 33% 25%;
     --input: 217 33% 25%;
     --ring: 189 94% 43%;
-
-    --radius: 0.75rem;
 
     --sidebar-background: 222 47% 11%;
     --sidebar-foreground: 0 0% 100%;
@@ -45,7 +86,6 @@
     --sidebar-border: 217 33% 25%;
     --sidebar-ring: 189 94% 43%;
   }
-
 }
 
 @layer base {
@@ -56,6 +96,11 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family: 'Inter', sans-serif;
+    background-image: radial-gradient(ellipse at top, hsl(var(--primary) / 0.08), transparent 60%);
+  }
+
+  .dark body {
+    background-image: none;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -72,16 +117,15 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(222 47% 11%);
+  background: hsl(var(--background));
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(189 94% 43% / 0.4);
+  background: hsl(var(--primary) / 0.4);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(189 94% 43% / 0.6);
+  background: hsl(var(--primary) / 0.6);
 }
-
 
 /* Animated gradient text */
 @keyframes gradient-shift {
@@ -90,7 +134,7 @@ html {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, hsl(189 94% 43%), hsl(199 89% 60%), hsl(189 94% 43%));
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary) / 0.7), hsl(var(--primary)));
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,9 +158,8 @@ html {
 
 /* Pulse glow */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(189 94% 43% / 0.15); }
-  50% { box-shadow: 0 0 40px hsl(189 94% 43% / 0.3); }
-
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.15); }
+  50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.3); }
 }
 
 .animate-pulse-glow {
@@ -130,7 +173,7 @@ html {
 }
 
 .shimmer-line {
-  background: linear-gradient(90deg, hsl(189 94% 43%) 0%, hsl(199 89% 65%) 50%, hsl(189 94% 43%) 100%);
+  background: linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.6) 50%, hsl(var(--primary)) 100%);
   background-size: 200% 100%;
   animation: shimmer 3s ease-in-out infinite;
 }
@@ -141,7 +184,7 @@ html {
 }
 .card-interactive:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 20px 40px -15px hsl(189 94% 43% / 0.2);
+  box-shadow: 0 20px 40px -15px hsl(var(--primary) / 0.25);
 }
 
 /* Underline grow effect */
@@ -155,18 +198,11 @@ html {
   left: 0;
   width: 0;
   height: 2px;
-  background: hsl(189 94% 43%);
+  background: hsl(var(--primary));
   transition: width 0.3s ease;
 }
 .underline-grow:hover::after {
   width: 100%;
-}
-
-/* Animated border */
-@keyframes border-dance {
-  0%, 100% { border-color: hsl(189 94% 43% / 0.2); }
-  50% { border-color: hsl(189 94% 43% / 0.5); }
-
 }
 
 /* Staggered children animation */
@@ -185,13 +221,7 @@ html {
 .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
 .stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
 
-/* Rotating border gradient */
-@keyframes rotate-border {
-  0% { --angle: 0deg; }
-  100% { --angle: 360deg; }
-}
-
-/* Blob animation for background */
+/* Blob animation */
 @keyframes blob {
   0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
   25% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
